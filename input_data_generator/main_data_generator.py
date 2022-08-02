@@ -84,6 +84,14 @@ if __name__ == "__main__":
             "chicken stock",
             "water",
         ],
+        "bws": [
+            "apa",
+            "ipa",
+            "ale",
+            "Cabernet sauvignon",
+            "Pinot Noir",
+            "whiskey",
+        ],
     }
     products_cats_frequency = (
         ["house"] * 15
@@ -102,7 +110,7 @@ if __name__ == "__main__":
     product_id_lookup = generate_products(output_location, products_data)
 
     end_date = datetime.today()
-    delta = relativedelta(months=3)
+    delta = relativedelta(months=1)
     start_date = end_date - delta
 
     generate_transactions(
